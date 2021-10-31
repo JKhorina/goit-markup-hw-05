@@ -56,7 +56,7 @@
             <section class="section section-hero">
                 <div class="hero-container container">
                     <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-                    <button class="btn-hero btn" type="button">Заказать услугу</button>
+                    <button class="btn-hero btn" type="button" data-modal-open>Заказать услугу</button>
                 </div>
             </section>
 
@@ -118,9 +118,24 @@
                 <div class="container">
                     <h2 class="section-title">Чем мы занимаемся</h2>
                     <ul class="list list-works">
-                        <li class="list-works-item"><img src="./images/box-1.jpg" alt="программирование" width="370"></li>
-                        <li class="list-works-item"><img src="./images/box-2.jpg" alt="работа с мобильными приложениями" width="370"></li>
-                        <li class="list-works-item"><img src="./images/box-3.jpg" alt="дизайн приложений" width="370"></li>
+                        <li class="list-works-item">
+                            <img src="./images/box-1.jpg" alt="программирование" width="370">
+                            <div class="list-work-item-container">
+                            <p class="list-work-item-text">Десктопные приложения</p>
+                            </div>
+                        </li>
+                        <li class="list-works-item">
+                            <img src="./images/box-2.jpg" alt="работа с мобильными приложениями" width="370">
+                            <div class="list-work-item-container">
+                            <p class="list-work-item-text">Мобильные приложения</p>
+                            </div>
+                        </li>
+                        <li class="list-works-item">
+                            <img src="./images/box-3.jpg" alt="дизайн приложений" width="370">
+                            <div class="list-work-item-container">
+                            <p class="list-work-item-text">Дизайнерские решения</p>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </section>
@@ -383,5 +398,15 @@
                 </div>
             </div>
         </footer>
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <button type="button" class="modal-button" data-modal-close>
+                    <svg class="modal-close-icon">
+                        <use href="./images/sprite.svg#icon-close"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <script src="./js/modal.js"></script>
     </body>
 </html>
